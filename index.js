@@ -6,7 +6,7 @@ const jsonParser = bodyParser.json()
 
 app.post('/event', jsonParser, (req, res) => {
   res.json({
-    challenge: req.body.token
+    challenge: req.body.challenge
   })
 })
 
