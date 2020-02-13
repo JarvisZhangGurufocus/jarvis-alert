@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 const jsonParser = bodyParser.json()
 
 app.post('/event', jsonParser, (req, res) => {
+  console.log(req.body)
   res.json({
     challenge: req.body.challenge
   })
